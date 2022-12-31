@@ -1,0 +1,29 @@
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+}
+
+.calc {
+  background-color: #73a659;
+  height: 100vh;
+  border-radius: 0.625rem;
+}
+
+.calc__keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.625rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calc__key {
+  width: 100%;
+  min-height: 3.125rem;
+  height: 100%;
+  border-radius: 0.3125rem;
+  background-color: #b0baab;
+  box-shadow: 5px 5px 5px black;
+}
