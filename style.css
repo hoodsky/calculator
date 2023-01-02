@@ -10,29 +10,30 @@ html {
 
 .calc {
   background-color: #598ca6;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
   height: 100%;
   border-radius: 0.625rem;
-  padding: 0.625rem;
+  padding: 1.25rem;
 }
 
 .calc__display {
-  margin: 1.25rem auto;
+  margin: 0 auto 0.625rem auto;
   border-radius: 0.3125rem;
-  width: 90%;
-  height: 3.125rem;
+  height: 6.25rem;
   background-color: #3d748f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .calc__display span {
   font-family: 'Orbitron', sans-serif;
-  padding: 1.0625rem;
-  font-size: 2rem;
+  padding: 0.625rem;
+  width: 100%;
+  text-align: end;
+  font-size: 2.5rem;
   color: #29363d;
 }
 
@@ -42,14 +43,11 @@ html {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   gap: 0.625rem;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .calc__key {
   width: 100%;
-  min-height: 3.125rem;
+  min-height: 3rem;
   height: 100%;
   border-radius: 0.3125rem;
   background-color: #abb5ba;
@@ -70,7 +68,7 @@ html {
   font-size: 2rem;
 }
 
-.calc__key:hover {
+.calc__key:active {
   margin: 0.1875rem -0.1875rem -0.1875rem 0.1875rem;
   -webkit-box-shadow: 0px 0px 1px #3d748f;
           box-shadow: 0px 0px 1px #3d748f;
