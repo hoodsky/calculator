@@ -5,7 +5,6 @@ html {
 .content {
   margin-left: auto;
   margin-right: auto;
-  width: 95vw;
 }
 
 .calc {
@@ -23,14 +22,13 @@ html {
   border-radius: 0.3125rem;
   height: 6.25rem;
   background-color: #3d748f;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
-.calc__display span {
+.calc__display input {
   font-family: 'Orbitron', sans-serif;
   padding: 0.625rem;
+  background-color: #3d748f;
   width: 100%;
   text-align: end;
   font-size: 2.5rem;
@@ -38,10 +36,8 @@ html {
 }
 
 .calc__keyboard {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.625rem;
 }
 
@@ -51,36 +47,24 @@ html {
   height: 100%;
   border-radius: 0.3125rem;
   background-color: #abb5ba;
-  -webkit-box-shadow: 3px 3px 1px #3d748f;
-          box-shadow: 3px 3px 1px #3d748f;
-  -webkit-transition: 0.3s;
+  box-shadow: 3px 3px 1px #3d748f;
   transition: 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #454f54;
   font-size: 2rem;
 }
 
 .calc__key:active {
   margin: 0.1875rem -0.1875rem -0.1875rem 0.1875rem;
-  -webkit-box-shadow: 0px 0px 1px #3d748f;
-          box-shadow: 0px 0px 1px #3d748f;
+  box-shadow: 0px 0px 1px #3d748f;
 }
 
 .calc__key-sum {
   background-color: #85a0ad;
-  -ms-grid-column: -1;
-      grid-column-start: -1;
+  grid-column-start: -1;
   grid-column-end: -2;
-  -ms-grid-row: 4;
-      grid-row-start: 4;
+  grid-row-start: 4;
   grid-row-end: 6;
 }
-/*# sourceMappingURL=style.css.map */

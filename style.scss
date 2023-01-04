@@ -63,7 +63,7 @@ html {
 .content {
   margin-left: auto;
   margin-right: auto;
-  width: 95vw;
+ // width: 95vw;
 }
 .calc {
   background-color: hsl($color-theme, 30%, 50%);
@@ -80,9 +80,11 @@ html {
     background-color: hsl($color-theme, 40%, 40%);
     display: flex;
     // align-items: center;
-    span {
+    input {
+    //  overflow: scroll;
       font-family: 'Orbitron', sans-serif;
       padding: rem(10);
+      background-color: hsl($color-theme, 40%, 40%);
       width: 100%;
       text-align: end;
       font-size: 2.5rem;
